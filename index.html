@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pankh (पंख) – Stories from India for kids growing up far away</title>
+<meta name="description" content="Pankh is a story book and monthly magazine for Indian-origin kids aged 7-12, connecting children growing up in the UK to the land of their roots.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sky:#F4F8FC;
+    --mist:#E4EEF7;
+    --ink:#1F3A52;
+    --blue:#3B7EA6;
+    --marigold:#F2A93B;
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--sky);color:var(--ink);font-family:"Nunito",system-ui,sans-serif;font-size:1.1rem;line-height:1.65}
+  h1,h2{font-family:"Baloo 2","Nunito",sans-serif;line-height:1.15;margin:0 0 .5em;color:var(--ink)}
+  h1{font-size:clamp(3.2rem,9vw,5.5rem);font-weight:800;letter-spacing:-.01em}
+  h2{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:700}
+  p{margin:0 0 1em;max-width:60ch}
+  a{color:var(--blue)}
+  .wrap{max-width:900px;margin:0 auto;padding:0 1.5rem}
+  section{padding:3.5rem 0}
+  .panel{background:var(--mist)}
+
+  .hero{padding:4.5rem 0 3.5rem}
+  .hero .wrap{display:grid;grid-template-columns:1.4fr .6fr;gap:2rem;align-items:center}
+  .hindi{font-weight:700;color:var(--blue)}
+  .tagline{font-size:1.4rem;font-weight:600;max-width:28ch;margin-bottom:.5em}
+  .feather{width:100%;max-width:240px;justify-self:center;animation:drift 1.2s ease-out both}
+  @keyframes drift{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+  .pull{font-family:"Baloo 2",sans-serif;font-size:1.5rem;font-weight:600;line-height:1.3;color:var(--blue);border-left:6px solid var(--marigold);padding-left:1rem;margin-top:1.5rem}
+
+  form{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0 .6rem}
+  input[type=email]{flex:1 1 240px;padding:.85rem 1rem;font:inherit;color:var(--ink);border:2px solid #BCD0E0;border-radius:10px;background:var(--white)}
+  button{padding:.85rem 1.5rem;font:inherit;font-weight:700;color:var(--ink);cursor:pointer;background:var(--marigold);border:2px solid var(--marigold);border-radius:10px;transition:background .15s,transform .15s}
+  button:hover{background:#F6BC5E;transform:translateY(-1px)}
+  input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+  .small{font-size:.92rem;color:#5A7388}
+
+  .collab{background:var(--white);border-left:6px solid var(--marigold);border-radius:6px;padding:2rem}
+  .collab ul{margin:0 0 1.2em;padding-left:1.2em}
+  .mail{display:inline-block;font-weight:700}
+
+  footer{padding:2rem 0 3rem;text-align:center;color:#5A7388;font-size:.95rem}
+
+  @media (max-width:700px){
+    .hero .wrap{grid-template-columns:1fr}
+    .feather{max-width:150px;order:-1;justify-self:start}
+  }
+  @media (prefers-reduced-motion:reduce){.feather{animation:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Pankh <span class="hindi">(पंख)</span></h1>
+      <p class="tagline">Stories from India for children growing up far from it.</p>
+      <p>A story book and monthly magazine for Indian-origin kids aged 7-12 in the UK.</p>
+    </div>
+    <img class="feather" src="pankh-wing.png" alt="Pankh wing logo">
+  </div>
+</header>
+
+<section class="panel" id="why">
+  <div class="wrap">
+    <h2>Why Pankh?</h2>
+    <p>Many of us grew up on stories from grandparents, summer holidays in India, neighbourhood games, and lessons tucked inside everyday adventures. Our children may be growing up far from those places, but stories can still open a window into that world.</p>
+    <p>Pankh means "wings". We want to give children the curiosity to explore, and the roots to come back to. Through our stories they meet familiar foods, places and family traditions, and see themselves in the characters, without it ever feeling like homework.</p>
+    <p class="pull">The best way to pass on a culture isn't to tell children what to remember. It's to give them stories they'll want to remember.</p>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <h2>Be the first to know</h2>
+    <p>Leave your email and we'll tell you when the first Pankh book and the next issue are ready.</p>
+    <form action="YOUR_FORM_ENDPOINT" method="POST">
+      <input type="email" name="email" placeholder="Your email address" aria-label="Your email address" required>
+      <button type="submit">Keep me posted</button>
+    </form>
+    <p class="small">Only Pankh news. No spam, and you can leave any time.</p>
+  </div>
+</section>
+
+<section class="panel" id="collaborate">
+  <div class="wrap">
+    <div class="collab">
+      <h2>Let's build Pankh together</h2>
+      <p>Pankh is just taking flight, and we'd love company. We're looking to work with:</p>
+      <ul>
+        <li>Writers who tell stories for children</li>
+        <li>Illustrators who draw warm, modern characters</li>
+        <li>Teachers, schools, temples and community groups</li>
+        <li>Parents with ideas, stories or feedback</li>
+      </ul>
+      <p>Write to us and tell us how you'd like to be part of it.</p>
+      <a class="mail" href="mailto:info@pankh-story.com">info@pankh-story.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; Pankh. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
