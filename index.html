@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pankh (पंख) — Children's Stories & Monthly Magazine</title>
+  <meta name="description" content="Original children's stories bringing the warmth of an Indian childhood to children growing up in the UK. Giving young minds wings to explore and roots to come back to.">
+  
+  <!-- Social Media / Open Graph -->
+  <meta property="og:title" content="Pankh (पंख) — Stories for Indian-Origin Children in the UK">
+  <meta property="og:description" content="Original stories bringing warmth, food, festivals, and everyday adventures from India to children growing up far from home.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Typography: Cormorant Garamond, Noto Serif Devanagari, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Noto+Serif+Devanagari:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation / Header Bar -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-link" aria-label="Pankh Home">
+        <img src="pankh-wing.png" alt="Pankh Logo" class="brand-logo-img" onerror="this.style.display='none'">
+        <span class="brand-wordmark">Pankh <span class="devanagari-inline">(पंख)</span></span>
+      </a>
+      <a href="#collaborate" class="nav-cta-link">Collaborate</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-emblem-wrap">
+          <img src="pankh-wing.png" alt="Pankh Logo" class="hero-logo" onerror="this.style.display='none'">
+        </div>
+        
+        <h1 class="hero-title">
+          Pankh <span class="devanagari-title">(पंख)</span>
+        </h1>
+        
+        <p class="hero-tagline">
+          Stories that give young minds wings to explore, and roots to come back to.
+        </p>
+        
+        <p class="hero-subtext">
+          Original stories for children aged 7–12 growing up in the UK. Bringing the warmth, adventures, and everyday magic of an Indian childhood into stories kids actually want to read.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+          <a href="#about" class="btn btn-outline">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. WHY PANKH SECTION -->
+    <section id="about" class="about-section">
+      <div class="container container-narrow">
+        <div class="section-badge text-center" style="display: table; margin: 0 auto 1.5rem;">Why Pankh?</div>
+        
+        <div class="editorial-content">
+          <p class="lead-text">
+            Many of us grew up on stories from grandparents, summer holidays in India, neighbourhood games, and lessons tucked inside everyday adventures. Our children may be growing up far from those places, but stories can still open a window into that world.
+          </p>
+          
+          <p>
+            <strong>Pankh means "wings".</strong> We want to give children the curiosity to explore, and the roots to come back to. Through our stories they meet familiar foods, places and family traditions, and see themselves in the characters, without it ever feeling like homework.
+          </p>
+          
+          <blockquote class="quote-box">
+            "The best way to pass on a culture isn't to tell children what to remember. It's to give them stories they'll want to remember."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. OUR FIRST BOOK SECTION -->
+    <section class="book-section">
+      <div class="container">
+        <div class="book-grid">
+          <div class="book-cover-frame">
+            <img src="pankh-book-cover.png" alt="Pankh Book Cover" class="book-cover-img">
+          </div>
+          
+          <div class="book-info">
+            <div class="section-badge">Our First Book</div>
+            <h2 class="section-title">Issue #1 — Pankh</h2>
+            <p class="book-desc">
+              Our inaugural storybook is complete! Designed specifically for young readers aged 7–12, it blends mystery, warmth, and relatable everyday moments with captivating illustrations.
+            </p>
+            <ul class="book-highlights">
+              <li>✨ Original adventure featuring relatable British-Indian kids</li>
+              <li>🎨 Richly illustrated artwork bringing everyday moments to life</li>
+              <li>☕ Zero preachy lessons — purely captivating storytelling</li>
+            </ul>
+            <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. EMAIL SIGNUP SECTION -->
+    <section id="waitlist" class="waitlist-section">
+      <div class="container container-narrow">
+        <div class="waitlist-card">
+          <h2 class="waitlist-title">Be First to Know</h2>
+          <p class="waitlist-sub">
+            We are preparing our first print edition and testing interest for a monthly magazine. Join our waitlist to get early updates and preview chapters.
+          </p>
+          
+          <form id="signup-form" action="#" method="POST" class="signup-form">
+            <div class="form-group">
+              <input 
+                type="email" 
+                id="email-input" 
+                name="email" 
+                placeholder="Enter your email address" 
+                required 
+                aria-label="Email Address"
+              >
+              <button type="submit" class="btn btn-primary btn-submit">Join Waitlist</button>
+            </div>
+            <p class="form-reassurance">🔒 No spam, ever. Unsubscribe with a single click at any time.</p>
+          </form>
+
+          <div id="confirmation-msg" class="confirmation-msg hidden" aria-live="polite">
+            <div class="confirm-icon">✨</div>
+            <h3>Thank you for joining our community!</h3>
+            <p>We've received your email. We will reach out soon with updates on our first release.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. COLLABORATION SECTION -->
+    <section id="collaborate" class="collaborate-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">Community & Growth</div>
+          <h2 class="section-title">Work With Us</h2>
+          <p class="section-subtitle">
+            Pankh is a community endeavor. We are actively seeking creative collaborators and community partners across the UK and India.
+          </p>
+        </div>
+
+        <div class="collab-grid">
+          <div class="collab-card">
+            <div class="collab-icon">✍️</div>
+            <h3>Writers</h3>
+            <p>Storytellers who can craft engaging, non-preachy mysteries and everyday adventures for children aged 7–12.</p>
+          </div>
+
+          <div class="collab-card">
+            <div class="collab-icon">🎨</div>
+            <h3>Illustrators</h3>
+            <p>Artists capable of bringing characters to life with warmth, vibrant cultural details, and modern flair.</p>
+          </div>
+
+          <div class="collab-card">
+            <div class="collab-icon">🏫</div>
+            <h3>Collaborators</h3>
+            <p>Schools, temples, cultural centers, and community groups wanting to bring Pankh to young readers.</p>
+          </div>
+        </div>
+
+        <div class="collab-cta-box text-center">
+          <p class="collab-cta-text">Have an idea, manuscript, or portfolio to share?</p>
+          <a href="mailto:info@pankh-story.com" class="btn btn-primary btn-large">
+            Contact Us at info@pankh-story.com
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo-text">Pankh (पंख)</span>
+        <p class="footer-tagline">Stories that give young minds wings.</p>
+      </div>
+      
+      <div class="footer-contact">
+        <a href="mailto:info@pankh-story.com" class="footer-email">info@pankh-story.com</a>
+        <p class="copyright">&copy; <span id="year">2026</span> Pankh Stories. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('signup-form');
+    const confirmation = document.getElementById('confirmation-msg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const emailInput = document.getElementById('email-input').value;
+      if (emailInput) {
+        form.style.display = 'none';
+        confirmation.classList.remove('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
